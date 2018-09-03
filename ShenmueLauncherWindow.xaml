@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="SteamLauncher.ShenmueLauncherWindow" Name="Launcher_Window" Title="Shenmue Launcher" Height="504" Width="896" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:SteamLauncher">
+  <Grid Width="896" Height="504" Background="#FF000000">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="263*" />
+      <RowDefinition Height="337*" />
+    </Grid.RowDefinitions>
+    <Button Name="button_sm1" Content="SM1" HorizontalAlignment="Left" Height="472" VerticalAlignment="Top" Width="448" Grid.RowSpan="2" Click="button_sm1_Click" KeyDown="on_key_down" MouseEnter="mouse_enter_SM1">
+      <Button.Template>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Image Name="image" Source="sm1_over.jpg" Stretch="Fill" />
+        </ControlTemplate>
+      </Button.Template>
+    </Button>
+    <Button Name="button_sm2" Content="SM2" HorizontalAlignment="Right" Height="472" VerticalAlignment="Top" Width="448" Grid.RowSpan="2" Click="button_sm2_Click" KeyDown="on_key_down" MouseEnter="mouse_enter_SM2">
+      <Button.Template>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Image Name="image" Source="sm2_over.jpg" Stretch="Fill" />
+        </ControlTemplate>
+      </Button.Template>
+    </Button>
+  </Grid>
+</Window>
